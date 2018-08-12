@@ -1,0 +1,125 @@
+body {
+    color: lightgreen;
+    background-color: blue;
+    margin: 20px;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.background {
+    background-color: teal;
+    background-image: url("../Homework/25\ more\ letters.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+#new-game-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background-color: lightgreen;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+    text-transform: uppercase;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px #5f5f5e;
+}
+
+#new-game-button:hover {
+    box-shadow: 0 4px #5f5f5e;
+    top: 2px;
+}
+
+#new-game-button:active {
+    box-shadow: 0 0 #5f5f5e;
+    top: 6px;
+}
+
+#placeholder-section {
+    background-color: blue;
+}
+
+#blanks {
+    letter-spacing: 6px;
+    font-size: 40px;
+    color: hotpink;
+}
+.gameHeader {
+    text-align: center;
+
+}
+
+.wrapper {
+    float: left;
+}
+
+.hangmanContainer {
+    float: right;
+    width: 400px;
+    height: 400px;
+}
+
+#presenting {
+    font-family: fantasy;
+    color: hotpink;
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px; 
+}
+
+#buttons {
+    color: hotpink;
+}
+.letter-button {
+    color: orange;
+}
+
+.letter-button-color {
+    color: darkcyan;
+}
+.letterblanks {
+    font-size: 30px;
+    color: lightblue;
+}
+#display {
+    position: absolute;
+}
+
+.userGuesses {  
+    height: 100px;
+}
+
+#clear {
+    font-size: 16px;
+    color: black;
+    border-style: solid;
+    width: 100px;
+  }
+
+.sticky-footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    height: 100px;
+    width: 100%;
+    vertical-align: text-bottom;
+    border-top: 5px solid teal;
+    margin: 0px 0px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

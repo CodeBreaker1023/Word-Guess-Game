@@ -1,0 +1,94 @@
+<!-- My Portfolio Webpage -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Hangman</title>
+    <!-- Linking Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Google font link -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css"> 
+</head>
+
+<body>
+    <!-- HANGMAN Header-->
+    <header id="gameHeader">    
+        <div class="pageTitle">
+            <h3 id="presenting">Coding Noobs Presents...</h3>
+            <h1 id="maintitle">H.A.N.G.M.A.N.</h1>
+        </div>
+        <!-- Game Rules Explained -->
+        <div id="gameRules">
+            <p>GAME PLAY: The name of the game is to guess the word displayed below before the man belows meets his fate by hanging. Choose from the list of letters. Correctly chosen letters will appear in their appropriate spaces.  If you guess incorrectly, the condemned man will advance one step closer to death. Guessing the word in its entirety is the only way to save him. The amount of men you save or put to death will be tallied in the corner. Hit the "Start Over" button to clear the board and get a new word.</p>
+        </div>
+    </header>
+    
+    <!-- Game container-->
+    <div class="container">
+        <!-- Wrapper around Game board i.e. Alphabet, Guesses, Word Array-->
+        <div class="wrapper">
+            <!-- ROW 1 Column 1-->
+            <div class="row">
+                <!-- ROW 1 of 3 within ROW 1 COLUMN 1 : Word Array -->
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <h2 class="wordGuessed">Guess this word: </h2>
+                        <br>
+                        <p class="letterblanks"> __ __ __ __ __ __ __ __ __</p>
+                            <span id="blanks"></span>
+                    </div>
+                <!-- ROW 2 of 3 within ROW 1 COLUMN 1 : Alphabet Selection -->
+                    <div class="col-md-12">
+                    <!-- Heading -->
+                    <h2 class="alphabetTitle">Pick a letter:</h2>
+                        <!-- Letter choices-->
+                        <div id="buttons"></div> 
+                        <br>  
+                    </div>                                     
+                <!-- ROW 3 of 3 within ROW 1 COLUMN 1 : Guesses -->
+                    <div class="col-md-12 my-10">
+                        <br>
+                        <h2 class="userGuesses">Guesses:</h2>
+                        <!-- Display letters chosen by userChoice-->
+                            <div id="display"></div>
+                        <br>
+                    </div>
+                </div> 
+            </div>
+            <button id="clear">Reset</button> 
+            <button id="newGame">New Game</button>
+        </div>
+        <!-- ROW 1 Column 2 : Hangman Image Display-->
+        <div class="row">
+            <div class="col-md-12 hangmanContainer">
+                <!-- Hangman Image -->
+                <img class="hangmanImg" src="Assets/images/Hangman9.jpg" alt="Hangman Image" width="400px">
+                <!-- <div id="imglist">
+                    <a href="javascript:nextImage('hangmanImg')"><img src="images/Hangman.jpg" alt="Hangman"></a>
+                </div> -->
+            </div>       
+    </div>
+    
+    <!-- Footer -->
+    <footer class="sticky-footer">
+        Copyright &copy; Jeremy Brown
+    </footer>
+        
+    <!-- Linking JS, Popper.js, and jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- LINK game.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./Assets/javascript/game.js"></script>
+</body>
+
+
+</html>
